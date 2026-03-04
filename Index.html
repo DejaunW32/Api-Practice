@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Pokemon Team</title>
+    <link rel="stylesheet" href="pokestyle.css">
+    
+</head>
+
+
+
+
+<body>
+
+    <h1>Pokemon Team</h1>
+
+    <div class="search-area">
+
+        <input type="text" id="pokemonName" placeholder="Enter pokemon name or a number">
+        <button onClick = "fetchData()">Find</button>
+
+        <img src="" alt = "Pokemon Image" id ="pokemonSprite" style ="display:none">
+
+        
+
+    </div>
+
+
+    
+
+
+
+    <div id="pokemonDisplay"></div>
+
+    <div id="moveSection" class="hidden">
+        <h3>Select 4 Moves</h3>
+
+        <select id="move1"></select>
+        <select id="move2"></select><br><br>
+        <select id="move3"></select>
+        <select id="move4"></select>
+
+        <br><br>
+        <button id="addBtn">Add to Team</button>
+    </div>
+
+
+    <h2>Your Team</h2>
+
+    <div id="teamContainer"></div>
+
+<script src="pokeapiFetch.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>
